@@ -33,6 +33,7 @@ public class Database {
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException ex) {
+            System.out.println("Driver not found.");
             Logger.getLogger(Database.class.getName()).log(Level.SEVERE, null, ex);
         }
         DataBaseConfigManeger dbManger = new DataBaseConfigManeger();
